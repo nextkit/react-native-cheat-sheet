@@ -1,9 +1,9 @@
-# react-native-starter
-💡 Script and How To's on how to create your fully functional react-native app!
+# React Native starter
+💡 Scripts and How To's on how to create your fully functional React Native app with TypeScript!
 
 ## Getting Started
 
-### Creating react-native pp
+### Creating React Native app
 react-native guide [here](https://facebook.github.io/react-native/docs/getting-started)
 
 ```bash
@@ -54,4 +54,22 @@ Make directory for assets and locale translations:
 ├── package.json
 └── ...
 ```
+
+The locale folder will contain the translations files.
+
+Install [React Native Localize](https://github.com/react-native-community/react-native-localize):
+```bash
+yarn add react-native-localize
+```
+
+
+
+
+
+Don't forget to install the pods!
+```bash
+cd ios && pod install
+```
+
+
 
