@@ -68,6 +68,7 @@ For this we will be using [React Native SQLite](https://github.com/andpor/react-
 
 ```bash
 yarn add react-native-sqlite-storage
+yarn add --dev @types/react-native-sqlite-storage
 ```
 
 
