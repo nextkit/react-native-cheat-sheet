@@ -62,6 +62,14 @@ Install [React Native Localize](https://github.com/react-native-community/react-
 yarn add react-native-localize
 ```
 
+### Local Database
+
+For this we will be using [React Native SQLite](https://github.com/andpor/react-native-sqlite-storage).
+
+```bash
+yarn add react-native-sqlite-storage
+```
+
 
 
 
