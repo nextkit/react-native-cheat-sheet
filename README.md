@@ -24,20 +24,21 @@ Create directory for `src` files and move `App.tsx` to it:
 └── ...
 ```
 
+Edit `tsconfig.json` to include the following options:
+```javascript
+{
+  // Other settings ...
+  "resolveJsonModule": true,
+  "experimentalDecorators": true,
+  // Other settings ...
+}
+```
+
 ### i18n support
 
 ```bash
 yarn add i18n-js
 yarn add --dev @types/i18n-js
-```
-
-Edit `tsconfig.json` to allow reading json files:
-```javascript
-{
-  // Other settings ...
-  "resolveJsonModule": true,
-  // Other settings ...
-}
 ```
 
 Make directory for assets and locale translations:
@@ -72,6 +73,24 @@ yarn add --dev @types/react-native-sqlite-storage
 ```
 
 
+### Mobx
+
+```bash
+yarn add mobx mobx-react-lite
+yarn add --dev @babel/plugin-proposal-class-properties @babel/plugin-proposal-decorators
+```
+
+Create the file `.babelrc` and add the following:
+```json
+{
+  "presets": ["module:metro-react-native-babel-preset"],
+  "plugins": [
+    ["@babel/plugin-transform-flow-strip-types"],
+    ["@babel/plugin-proposal-decorators", {"legacy": true}],
+    ["@babel/plugin-proposal-class-properties", {"loose": true}]
+  ]
+}
+```
 
 
 
