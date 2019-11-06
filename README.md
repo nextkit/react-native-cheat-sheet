@@ -1,4 +1,4 @@
-# React Native starter
+# React Native cheat sheet (with TypeScript)
 💡 Scripts and How To's on how to create your fully functional React Native app with TypeScript!
 
 ## Getting Started
