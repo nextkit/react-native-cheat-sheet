@@ -97,6 +97,22 @@ Create the file `.babelrc` and add the following:
 yarn add react-native-svg
 ```
 
+### React Navigation
+
+Gettings Started with [React Navigation](https://reactnavigation.org/docs/en/getting-started.html).
+
+```bash
+yarn add react-navigation react-native-reanimated react-native-gesture-handler react-native-screens@^1.0.0-alpha.23
+```
+
+Add (or replace if the dependancie already exists) following dependencies to your android project in the file: `android/app/build.gradle`:
+
+```gradle
+implementation 'androidx.appcompat:appcompat:1.1.0-rc01'
+implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0-alpha02'
+```
+```
+
 
 
 Don't forget to install the pods!
