@@ -126,7 +126,7 @@ enableScreens();
 ```
 
 ## Adding custom fonts
-1. Create an assets folder at the root of your project directory
+1. Create an assets folder (and a fonts folder in it) at the root of your project directory:
 
 ```
 ├── src
@@ -138,16 +138,20 @@ enableScreens();
 ├── package.json
 └── ...
 ```
-2. Create a fonts folder within the assets folder and place your font files here
-3. In your package.json specify where the custom fonts are located
+2. In your package.json specify where the custom fonts are located
 
-"rnpm": {
+```json
+  "rnpm": {
     "assets": [
    "./assets/fonts/"
     ]
   }
+```
 
-4. Next run the command react-native link
+3. Next run the command 
+```bash
+react-native link
+```
 
 
 
