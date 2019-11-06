@@ -108,6 +108,7 @@ Gettings Started with [React Navigation](https://reactnavigation.org/docs/en/get
 
 ```bash
 yarn add react-navigation react-native-reanimated react-native-gesture-handler react-native-screens
+
 # (Optional)
 yarn add react-navigation-tabs # Adds tab support
 ```
