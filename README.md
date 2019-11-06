@@ -151,7 +151,7 @@ enableScreens();
 
 3. Next run the command 
 ```bash
-react-native link
+npx react-native link
 ```
 
 
