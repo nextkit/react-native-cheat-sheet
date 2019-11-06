@@ -120,7 +120,7 @@ implementation 'androidx.appcompat:appcompat:1.1.0-rc01'
 implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0-alpha02'
 ```
 
-Now add this to the top of your `App.tsx` (Your first rendered component):
+Now add this to `index.js` (Before registration):
 ```javascript
 import {enableScreens} from 'react-native-screens';
 enableScreens();
@@ -140,14 +140,12 @@ enableScreens();
 ├── package.json
 └── ...
 ```
-2. In your package.json specify where the custom fonts are located
+2. Create/Add to `react-native.config.js`:
 
 ```json
-  "rnpm": {
-    "assets": [
-   "./assets/fonts/"
-    ]
-  }
+module.exports = {
+  assets: ['./assets/fonts/'],
+};
 ```
 
 3. Next run the command 
