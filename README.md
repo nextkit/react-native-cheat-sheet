@@ -45,12 +45,12 @@ Make directory for assets and locale translations:
 
 ```
 ├── src
-│   ├── assets
-│   │   ├── locales
-│   │   │   ├── en.json
-│   │   │   ├── de.json
-│   │   │   └── ...
 │   └── App.tsx
+├── assets
+│   └── locales
+│       ├── en.json
+│       ├── de.json
+│       └── ...
 ├── index.js
 ├── package.json
 └── ...
@@ -132,6 +132,7 @@ enableScreens();
 ├── src
 │   └── ...
 ├── assets
+│   ├── locale
 │   └── fonts
 │       └── font.ttf
 ├── index.js
