@@ -4,7 +4,7 @@
 ## Getting Started
 
 ### Creating React Native app
-react-native guide [here](https://facebook.github.io/react-native/docs/getting-started)
+react-native guide [here](https://facebook.github.io/react-native/docs/getting-started).
 
 ```bash
 npx react-native init MyApp --template react-native-template-typescript
@@ -90,6 +90,11 @@ Create the file `.babelrc` and add the following:
     ["@babel/plugin-proposal-class-properties", {"loose": true}]
   ]
 }
+```
+
+### SVG
+```bash
+yarn add react-native-svg
 ```
 
 
