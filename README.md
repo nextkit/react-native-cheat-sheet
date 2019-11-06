@@ -111,7 +111,6 @@ Add (or replace if the dependancie already exists) following dependencies to you
 implementation 'androidx.appcompat:appcompat:1.1.0-rc01'
 implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0-alpha02'
 ```
-```
 
 
 
