@@ -142,7 +142,7 @@ enableScreens();
 ```
 2. Create/Add to `react-native.config.js`:
 
-```json
+```javascript
 module.exports = {
   assets: ['./assets/fonts/'],
 };
