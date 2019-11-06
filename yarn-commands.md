@@ -15,6 +15,11 @@ Install dev dependencies:
 yarn add --dev @babel/plugin-proposal-class-properties @babel/plugin-proposal-decorators @types/react-native-sqlite-storage @types/i18n-js
 ```
 
+Install pods:
+```bash
+cd ios && pod install
+```
+
 Add to `android/app/build.gradle` dependencies:
 ```gradle
 implementation 'androidx.appcompat:appcompat:1.1.0-rc01'
@@ -31,9 +36,14 @@ import {enableScreens} from 'react-native-screens';
 enableScreens();
 ```
 
-Install pods:
-```bash
-cd ios && pod install
+Add options in `tsconfig.json`:
+```javascript
+{
+  // Other settings ...
+  "resolveJsonModule": true,
+  "experimentalDecorators": true,
+  // Other settings ...
+}
 ```
 
 You are all set. Happy coding!
