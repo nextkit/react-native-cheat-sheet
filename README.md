@@ -110,6 +110,8 @@ Gettings Started with [React Navigation](https://reactnavigation.org/docs/en/get
 yarn add react-navigation react-native-reanimated react-native-gesture-handler react-native-screens
 ```
 
+(Optional) For Tab support run `yarn add react-navigation-tabs`.
+
 Add (or replace if the dependancie already exists) following dependencies to your android project in the file: `android/app/build.gradle`:
 
 ```gradle
