@@ -132,7 +132,7 @@ enableScreens();
 ├── src
 │   └── ...
 ├── assets
-│   ├── locale
+│   ├── locales
 │   └── fonts
 │       └── font.ttf
 ├── index.js
