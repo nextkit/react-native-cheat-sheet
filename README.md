@@ -92,6 +92,11 @@ Create the file `.babelrc` and add the following:
 }
 ```
 
+To your `index.js` add the following before mounting your app:
+```javascript
+import 'mobx-react-lite/optimizeForReactNative';
+```
+
 ### SVG
 ```bash
 yarn add react-native-svg
@@ -110,6 +115,12 @@ Add (or replace if the dependancie already exists) following dependencies to you
 ```gradle
 implementation 'androidx.appcompat:appcompat:1.1.0-rc01'
 implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0-alpha02'
+```
+
+Now add this to the top of your `App.tsx` (Your first rendered component):
+```javascript
+import {enableScreens} from 'react-native-screens';
+enableScreens();
 ```
 
 
