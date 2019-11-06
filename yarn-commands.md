@@ -37,7 +37,7 @@ enableScreens();
 ```
 
 Add to `.babelrc`:
-
+```json
 {
   "presets": ["module:metro-react-native-babel-preset"],
   "plugins": [
@@ -46,6 +46,7 @@ Add to `.babelrc`:
     ["@babel/plugin-proposal-class-properties", {"loose": true}]
   ]
 }
+```
 
 Add options in `tsconfig.json`:
 ```javascript
