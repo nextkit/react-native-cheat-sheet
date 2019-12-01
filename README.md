@@ -153,6 +153,7 @@ module.exports = {
 npx react-native link
 ```
 
+> If you are having problems with it (Font not being added/remove) [here](https://medium.com/@mehran.khan/ultimate-guide-to-use-custom-fonts-in-react-native-77fcdf859cf4) is a tutorial.
 
 
 
