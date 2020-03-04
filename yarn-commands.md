@@ -26,6 +26,34 @@ implementation 'androidx.appcompat:appcompat:1.1.0-rc01'
 implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0-alpha02'
 ```
 
+Add following code to `MainActivity.java`for the `react-native-gesture-handler`:
+```java
+package com.swmansion.gesturehandler.react.example;
+
+import com.facebook.react.ReactActivity;
++ import com.facebook.react.ReactActivityDelegate;
++ import com.facebook.react.ReactRootView;
++ import com.swmansion.gesturehandler.react.RNGestureHandlerEnabledRootView;
+
+public class MainActivity extends ReactActivity {
+
+  @Override
+  protected String getMainComponentName() {
+    return "Example";
+  }
+
++  @Override
++  protected ReactActivityDelegate createReactActivityDelegate() {
++    return new ReactActivityDelegate(this, getMainComponentName()) {
++      @Override
++      protected ReactRootView createRootView() {
++       return new RNGestureHandlerEnabledRootView(MainActivity.this);
++      }
++    };
++  }
+}
+```
+
 Add to `index.js` (Before `AppRegistry.registerComponent(...)`):
 ```javascript
 // Optimize MobX
