@@ -1,6 +1,6 @@
 import React, { createContext } from 'react';
 
-import {CounterStore, ThemeStore} from '../stores';
+import {CounterStore, ThemeStore} from '.';
 
 const counterStore = new CounterStore();
 const themeStore = new ThemeStore();
