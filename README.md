@@ -63,13 +63,13 @@ Install [React Native Localize](https://github.com/react-native-community/react-
 yarn add react-native-localize
 ```
 
-### Local Database
+### Async Storage
 
-For this we will be using [React Native SQLite](https://github.com/andpor/react-native-sqlite-storage).
+For this we will be using [React Native Async Storage](https://github.com/react-native-community/async-storage/blob/%40react-native-community/async-storage-backend-legacy%402.0.0-rc.3/packages/storage-legacy/README.md).
 
 ```bash
-yarn add react-native-sqlite-storage
-yarn add --dev @types/react-native-sqlite-storage
+yarn add @react-native-community/async-storage@next
+yarn add @react-native-community/async-storage-backend-legacy@next
 ```
 
 
@@ -107,10 +107,11 @@ yarn add react-native-svg
 Gettings Started with [React Navigation](https://reactnavigation.org/docs/en/getting-started.html).
 
 ```bash
-yarn add react-navigation react-native-reanimated react-native-gesture-handler react-native-screens
+yarn add @react-navigation/native react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
 
 # (Optional)
-yarn add react-navigation-tabs # Adds tab support
+yarn add @react-navigation/bottom-tabs
+yarn add @react-navigation/stack
 ```
 
 Add (or replace if the dependancie already exists) following dependencies to your android project in the file: `android/app/build.gradle`:
@@ -150,6 +151,7 @@ public class MainActivity extends ReactActivity {
 
 Now add this to `index.js` (Before registration):
 ```javascript
+import 'react-native-gesture-handler';
 import {enableScreens} from 'react-native-screens';
 enableScreens();
 ```
