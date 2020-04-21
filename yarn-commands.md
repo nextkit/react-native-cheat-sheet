@@ -7,12 +7,16 @@ npx react-native init MyApp --template react-native-template-typescript
 Install dependencies:
 
 ```bash
-yarn add i18n-js react-native-localize react-native-sqlite-storage mobx mobx-react-lite react-native-svg react-navigation react-native-reanimated react-native-gesture-handler react-native-screens react-navigation-tabs
+yarn add i18n-js react-native-localize @react-native-community/async-storage@next react-native-community/async-storage-backend-legacy@next mobx mobx-react-lite react-native-svg @react-navigation/native react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
+```
+Optional Navigation components:
+```
+yarn add @react-navigation/bottom-tabs @react-navigation/stack
 ```
 
 Install dev dependencies:
 ```bash
-yarn add --dev @babel/plugin-proposal-class-properties @babel/plugin-proposal-decorators @types/react-native-sqlite-storage @types/i18n-js
+yarn add --dev @babel/plugin-proposal-class-properties @babel/plugin-proposal-decorators @types/i18n-js
 ```
 
 Install pods:
@@ -58,6 +62,8 @@ Add to `index.js` (Before `AppRegistry.registerComponent(...)`):
 ```javascript
 // Optimize MobX
 import 'mobx-react-lite/optimizeForReactNative';
+// Gesture handler
+import 'react-native-gesture-handler';
 
 // Use react-native-screens
 import {enableScreens} from 'react-native-screens';
